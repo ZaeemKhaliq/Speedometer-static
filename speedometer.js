@@ -143,9 +143,7 @@ function onPedalEnter() {
 
   pauseButton.innerText = "Pause Speed";
 
-  if (arrowRotationDegree < 585) {
-    incrementRotationDegree();
-  }
+  incrementRotationDegree();
 }
 
 function onPedalLeave() {
