@@ -97,7 +97,8 @@
   height: 30vh;
 }
 
-.pedal:hover {
+.pedal:hover,
+.pedal:focus {
   background-color: #8dda8d;
 }
 
