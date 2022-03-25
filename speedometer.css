@@ -76,7 +76,7 @@
 .mileage-text {
   color: black;
   margin: 0;
-  font-family: Raleway, Segoe UI, Roboto, sans-serif;
+  font-family: Raleway, Roboto, Segoe UI, Roboto, sans-serif;
   font-size: 0.32rem;
   font-weight: bold;
 }
@@ -95,6 +95,10 @@
 
 .pedal {
   height: 30vh;
+}
+
+.pedal:hover {
+  background-color: #8dda8d;
 }
 
 .pedal-container h6 {
