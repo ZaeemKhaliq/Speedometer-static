@@ -1,3 +1,5 @@
+@import url("http://fonts.cdnfonts.com/css/lcd");
+
 * {
   box-sizing: border-box;
 }
@@ -20,14 +22,15 @@
   transform: rotate(312deg);
   transform-origin: 50% 50%;
   fill: url("#gradient");
+  filter: drop-shadow(2px 4px 4px black);
 }
 
 .speedometer {
-  fill: #3b3838;
+  /* fill: #3b3838; */
+  fill: url("#main-gradient");
 }
 
 .center-circle {
-  filter: drop-shadow(0px 0px 4px red) drop-shadow(0px 0px 1px white);
   stroke: red;
   fill: black;
 }
@@ -48,8 +51,43 @@
 
 .speed-values {
   font-size: 0.7rem;
-  font-family: Raleway, Roboto, Segoe UI, sans-serif;
+  font-family: Roboto, Segoe UI, sans-serif;
   font-weight: bold;
+}
+
+.unit-kmh {
+  fill: white;
+  font-family: Roboto, Segoe UI, sans-serif;
+  font-weight: bold;
+}
+
+.mileage {
+  transform: translate(96px, 72%);
+}
+
+.mileage-rect {
+  fill: #7de37d;
+}
+
+.mileage-text-container {
+  text-align: center;
+  margin-top: 4px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid black;
+}
+
+.mileage-text {
+  color: black;
+  margin: 0;
+  font-family: Raleway, Segoe UI, Roboto, sans-serif;
+  font-size: 0.32rem;
+  font-weight: bold;
+}
+
+.mileage-digits {
+  font-family: LCD, sans-serif;
+  font-size: 0.6rem;
+  fill: black;
 }
 
 .pedal-container {
@@ -65,4 +103,8 @@
 .pedal-container h6 {
   margin: 0;
   font-size: 3vw;
+}
+
+.pause-button {
+  margin-top: 1rem;
 }

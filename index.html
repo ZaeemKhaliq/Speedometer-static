@@ -36,7 +36,17 @@
             <stop offset="0%" stop-color="silver" />
             <stop offset="100%" stop-color="black" />
           </linearGradient>
+          <radialGradient id="main-gradient">
+            <stop
+              offset="0%"
+              stop-color="#bfb6b6"
+              style="color: #bfb6b6"
+            ></stop>
+            <stop offset="75%" stop-color="#3b3838"></stop>
+            <stop offset="100%" stop-color="#181616"></stop>
+          </radialGradient>
         </defs>
+
         <circle
           cx="50%"
           cy="50%"
@@ -67,6 +77,19 @@
           style="filter: drop-shadow(0px 0px 6px black)"
         ></circle>
         <circle cx="50%" cy="50%" r="105" class="speedometer"></circle>
+        <text x="105" y="62%" class="unit-kmh">KM/H</text>
+        <g class="mileage">
+          <rect width="60" height="30" class="mileage-rect" />
+          <foreignObject width="60" height="30">
+            <div class="mileage-text-container">
+              <p class="mileage-text">DISTANCE TRAVELLED</p>
+            </div>
+          </foreignObject>
+
+          <text x="5" y="25" class="mileage-digits" id="mileage-digits">
+            0.00 km
+          </text>
+        </g>
       </svg>
       <div class="pedal-container">
         <img
@@ -77,6 +100,7 @@
           onmouseleave="onPedalLeave()"
         />
         <h6>HOVER ME</h6>
+        <button class="pause-button" id="pause-button">Pause Speed</button>
       </div>
     </main>
   </body>
