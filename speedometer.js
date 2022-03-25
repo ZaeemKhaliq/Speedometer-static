@@ -1,6 +1,7 @@
 let speedPaused = false;
 let redArrow;
 let mileage;
+let pauseButton;
 
 document.addEventListener("DOMContentLoaded", () => {
   let svg = document.getElementById("svg-main");
@@ -72,9 +73,14 @@ document.addEventListener("DOMContentLoaded", () => {
     <circle cx="50%" cy="50%" r="12" class="center-circle"></circle>
     `;
 
-  let pauseButton = document.getElementById("pause-button");
+  pauseButton = document.getElementById("pause-button");
   pauseButton.addEventListener("click", () => {
     speedPaused = !speedPaused;
+    if (speedPaused) {
+      pauseButton.innerText = "Resume Speed";
+    } else {
+      pauseButton.innerText = "Pause Speed";
+    }
   });
 
   mileage = document.getElementById("mileage-digits");
@@ -134,6 +140,8 @@ function onPedalEnter() {
   enterEvent = true;
   leaveEvent = false;
   speedPaused = false;
+
+  pauseButton.innerText = "Pause Speed";
 
   if (arrowRotationDegree < 585) {
     incrementRotationDegree();
