@@ -47,15 +47,17 @@
 }
 
 .speed-values {
-  font-size: 0.7rem;
-  font-family: Roboto, Segoe UI, sans-serif;
+  font-size: 0.65rem;
+  font-family: Open Sans, Roboto, Segoe UI, sans-serif;
   font-weight: bold;
+  letter-spacing: -0.5px;
 }
 
 .unit-kmh {
   fill: white;
   font-family: Roboto, Segoe UI, sans-serif;
   font-weight: bold;
+  font-size: 0.7rem;
 }
 
 .mileage {
@@ -76,7 +78,7 @@
 .mileage-text {
   color: black;
   margin: 0;
-  font-family: Raleway, Roboto, Segoe UI, Roboto, sans-serif;
+  font-family: Raleway, Segoe UI, Roboto, sans-serif;
   font-size: 0.32rem;
   font-weight: bold;
 }
